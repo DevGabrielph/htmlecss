@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+              }
+              h1{
+                  text-align: center;
+                  background-color: rgba(196, 173, 145, 0.432);
+                  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.61) ;
+                  
+                
+              }
+              nav{
+                  background-color: rgb(141, 141, 141);
+                  padding: 3px;
+                  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.788);/*(box-shadow)= função sombra! Parametros:1-deslocamento vertical,2-deslocamento horizontal,3-espalhamento*/
+              }
+              nav > a{
+                  text-decoration: none;
+                  color: white;
+                  font-weight: bold;
+                  margin-right: 30px;
+              }
+
+        main{ 
+            background-color:white ;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 1px;
+            box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.582);
+            
+         }
+         article{
+             background-color: lightgray;
+         }
+         article > aside{
+             background-color: rgb(99, 97, 97);
+
+         }
+         footer{
+             background-color: black;
+             color: white;
+             text-align: center;
+             padding: 1px;    
+            margin: 0px;     }
+            footer>p{
+                margin: 2px;
+            }
+            div#bola{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background-color: white;
+                border-radius: 50%;
+
+            }
+
+    </style>
+</head>
+<body>
+    <header><!--cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav><!--nav=Navegação,usada para fazer menu-->
+            <a href="">a </a>
+            <a href="">b</a>
+            <a href="">c </a>
+            <a href="">d </a>
+        </nav>
+
+    </header>
+    <main><!--conteudo principal-->
+        <section id="assuntos"><!--section= seções,para criar seções dentro do site,seções essas que podem ter outros elementos dentro como div,article,p,h1 entre outros -->
+            <h2>Esportes,Politica e Tecnologia</h2>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae optio tempore? Fugiat ab sint saepe omnis veniam, porro quasi excepturi perspiciatis, iste corrupti asperiores exercitationem corporis quia. Debitis, pariatur.</p>
+                <aside>
+                    <p>artigo escrito por gabriel phelipe</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer><!--rodapé-->
+        <p>Desenvolvido por curso em video </p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
