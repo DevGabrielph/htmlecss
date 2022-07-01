@@ -1,11 +1,22 @@
 @charset "utf8";
+@import url('https://fonts.googleapis.com/css2?display=swap');
+@import url('https://fonts.googleapis.com/css2? família=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, geneva, tahoma,sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 html,body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -13,12 +24,15 @@ header{
     text-align: center;
 }
 header>h1{
-    padding-top:50px ;
+    padding:50px 30px 0px 2px  ;
+    font-size: 8vw;
+    font-family: var(--fonte2);
     font-variant: small-caps;/*text-transform: uppercase --> deixa todas as letras em maiusculo
     font-variante:small caps deixa todas as letras em maiusculo mas com a primeira letra de cada palavra em tamanho maior */
 }
 header>p{
     padding-bottom: 50px ;
+    font-size: 3vw;
 }
 a{
     color: white;
@@ -33,6 +47,8 @@ section{
     padding-bottom:10vh ;
     line-height: 2em;
     padding-left:30px ;
+    font-family: var(--fonte3);
+    font-size: 4vw;
 }
 .normal{
     background-color: white;
